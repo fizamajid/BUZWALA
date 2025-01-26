@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - BUSWALA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="results-section">
+      <h2>Search Results</h2>
+      <div id="results-container">
+        <!-- JavaScript will populate this section -->
+      </div>
+      <button onclick="window.location.href='index.html'">Back to Home</button>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 BUSWALA. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Fetch query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const from = urlParams.get('from');
+    const to = urlParams.get('to');
+    const date = urlParams.get('date');
+
+    // Placeholder bus data
+ 
+      const buses= [
+        {id: 1, name: "Bus 1", time: "10:00 AM", seats: "20 Available"},
+        {id: 2, name: "Bus 2", time: "1:00 PM", seats: "15 Available"},
+        {id: 3, name: "Bus 3", time: "4:00 PM", seats: "10 Available"}
+      ];
+
+
+    // Render search results
+    const resultsContainer = document.getElementById('results-container');
+    resultsContainer.innerHTML = `
+      <p><strong>From:</strong> ${from}</p>
+      <p><strong>To:</strong> ${to}</p>
+      <p><strong>Date:</strong> ${date}</p>
+      <h3>Available Buses:</h3>
+      <ul>
+        ${buses.map(bus => `
+          <li>
+            <strong>${bus.name}</strong> - ${bus.time} - ${bus.seats}
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  </script>
+</body>
+
+</html>

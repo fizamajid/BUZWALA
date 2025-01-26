@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUZWALA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>BUZWALA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="routes.html">Bus Info</a></li>
+          <li><a href="bookings.html">Booking</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="overlay">
+      <div class="content">
+        <h2>Your Trusted Rural Bus Travel Service</h2>
+        <p>Find, book, and plan your bus trips with ease, whether you're traveling short or long distances!</p>
+        <a href="bookings.html"><button>Book Now</button></a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="search">
+      <h2>Search Bus Routes</h2>
+      <form action="search_result.html" method="GET">
+        <label for="from">From:</label>
+        <select id="from" name="from" required>
+          <option value="" disabled selected>Select starting location</option>
+          <option value="CityA">City A</option>
+          <option value="CityB">City B</option>
+          <option value="CityC">City C</option>
+        </select>
+
+        <label for="to">To:</label>
+        <select id="to" name="to" required>
+          <option value="" disabled selected>Select destination</option>
+          <option value="CityA">City A</option>
+          <option value="CityB">City B</option>
+          <option value="CityC">City C</option>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rural Bus Service. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

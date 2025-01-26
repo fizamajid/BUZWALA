@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Bus Service - Routes</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body >
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="header-content">
+      <h1>BUZWALA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="routes.html">Bus Info</a></li>
+          <li><a href="bookings.html">Booking</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search Bar Section -->
+  <section class="search-section">
+    <h2>Search Bus Routes</h2>
+    <form id="routeSearchForm" action="businfo.html" method="GET">
+      <!-- From Dropdown -->
+      <label for="from">From:</label>
+      <select id="from" name="from" required>
+        <option value="" disabled selected>Select starting location</option>
+        <option value="CityA">City A</option>
+        <option value="CityB">City B</option>
+        <option value="CityC">City C</option>
+        <option value="CityD">City D</option>
+      </select>
+
+      <!-- To Dropdown -->
+      <label for="to">To:</label>
+      <select id="to" name="to" required>
+        <option value="" disabled selected>Select destination</option>
+        <option value="CityA">City A</option>
+        <option value="CityB">City B</option>
+        <option value="CityC">City C</option>
+        <option value="CityD">City D</option>
+      </select>
+
+      <!-- Search Button -->
+     <a href="businfo.html"><button type="submit">Search Routes</button></a> 
+    </form>
+  </section>
+
+  <!-- Placeholder for Additional Content -->
+  <footer>
+  <section class="additional-content">
+    <h2>Additional Information</h2>
+    <p>Explore our rural bus routes and find the best options for your travel needs. Detailed schedules and stops are provided for your convenience.</p>
+  </section>
+  <footer>
+    <p>© 2025 Rural Bus Service. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

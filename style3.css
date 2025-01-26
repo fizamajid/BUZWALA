@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('back2.jpeg'); /* Replace 'background.jpg' with your image file */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Makes the image stay in place during scrolling */
+    color: #333; /* Ensures text is readable against the background */
+  }
+  
+  /* Header (Navigation bar at the top) */
+  header {
+    background-color: rgba(250, 250, 250, 0.1); /* Transparent background */
+    position: fixed; /* Fixed navigation */
+    width: 100%;
+    z-index: 100; /* Ensure it stays on top of other content */
+    padding: 1rem 0; /* Adjust padding for better space */
+    top: 0; /* Align it to the top of the page */
+    left: 0;
+    box-shadow: 0 2px 5px rgba(231, 228, 228, 0.1); /* Shadow for better visibility */
+    backdrop-filter: blur(2px); /* Optional: Blur effect */
+  }
+  
+  /* Header content styling */
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: #c3bbbb;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #c3bbbb; /* Light grey color for the links */
+    font-weight: 300; /* Thinner font for navigation links */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #6d6464; /* Greyish background on hover */
+    border-radius: 2px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 2.5rem;
+    color: #faf9f9;
+    margin-bottom: 100px;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  /* Table Styling */
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Adds depth to the table */
+    background: rgba(46, 39, 39, 0.95); /* Slightly transparent white */
+    border-radius: 15px;
+    overflow: hidden; /* Ensures rounded corners */
+  }
+  
+  /* Table Header */
+  table thead {
+    background: #333; /* Dark background for the header */
+    color: rgb(255, 255, 255); /* White text for contrast */
+    text-transform: uppercase; /* Capitalized text */
+    font-size: 1.2rem;
+  }
+  
+  table th {
+    padding: 1rem;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  /* Table Body */
+table tbody tr {
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  table tbody tr:nth-child(even) {
+    background: rgba(226, 224, 224, 0.5); /* Light gray with transparency for alternating rows */
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background: rgba(240, 240, 240, 0.7); /* Slightly transparent light gray */
+  }
+  
+  table tbody tr:hover {
+    background: rgba(173, 216, 230, 0.5); /* Light blue on hover */
+    transform: scale(1.01); /* Slight zoom on hover */
+  }
+  
+  /* Table Cells */
+  table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(243, 240, 240, 0.5); /* Subtle borders between cells */
+    font-size: 1rem;
+  }
+  
+  
+  table td:first-child {
+    font-weight: bold; /* Emphasize the route number */
+  }
+  
+  table td:last-child {
+    text-align: left; /* Align route details to the left */
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 2rem;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    table th,
+    table td {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    main h2 {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+  }
+  
